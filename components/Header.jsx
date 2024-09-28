@@ -9,5 +9,6 @@ export default Header;
 const StyledHeader = styled.header`
   color: red;
   background: red;
-  padding: 20px;
+  padding: 18px;
+
 `;
