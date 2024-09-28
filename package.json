@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format:check":"prettier --check 'src/**/*{css,js,jsx}'",
+    "format:fix":"prettier --write 'src/**/*{css,js,jsx}'"
   },
   "dependencies": {
     "next": "14.2.3",
@@ -16,6 +18,7 @@
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "eslint-config-next": "14.2.3",
+    "prettier": "3.3.3"
   }
 }
