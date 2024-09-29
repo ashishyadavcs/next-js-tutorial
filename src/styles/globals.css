@@ -1,6 +1,29 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    font-family: sans-serif;
+}
+body::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: all 0.3s;
+}
+body:has(header.active)::before {
+    opacity: 1;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
 }
